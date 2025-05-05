@@ -1,0 +1,111 @@
+.contato-section {
+    background-image: radial-gradient(circle, rgba(47, 102, 109, 0.5), rgba(255, 255, 255, 0.5));
+    opacity: 0.8;
+    padding: 50px 0;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.contato-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: white;
+}
+
+.contato-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding: 10px 20px;
+}
+
+.contato-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 29px;
+    background-color: rgba(4, 78, 88, 0.8);    
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contato-info i {
+    font-size: 2em;
+    color: white;
+    margin-right: fit-content;
+}
+
+
+
+.contato-info a {
+    text-decoration: none;
+    color: rgb(4, 78, 88);
+    font-weight: bold;
+    font-size: 1.2em;
+    z-index: 1; 
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato-info a:hover {
+    background-color: rgb(14, 132, 132);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+@media (max-width: 1125px) {
+    .contato-section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contato-section h1 {
+        font-size: 2em;
+    }
+
+    .contato-section p {
+        font-size: 1em;
+    }
+
+    .contato-info a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 580px) {
+    .contato-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contato-section h1 {
+        font-size: 1.5em;
+    }
+
+    .contato-section p {
+        font-size: 0.9em;
+    }
+
+    .contato-info a {
+        font-size: 0.9em;
+    }
+    .contato-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Funnel Display', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(img/cozinha_de_madeira.avif);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    max-width: 100%;
+    image-rendering: auto;
+}
+
+
+
+nav {
+    background-color: rgb(255, 255, 255);
+    padding: 0 60px;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 80px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(4, 78, 88);
+    
+}
+
+nav a:hover {
+    color: rgb(14, 132, 132);
+    transition: 0.3s ease;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+nav li {
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.sidebar a:hover {
+    color: rgb(14, 132, 132);
+    transition: 0.6s ease;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 1125px){
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+
+@media (max-width: 400px){
+    .sidebar {
+        width: 100%;
+    }
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(0px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 200px;
+    left: 40px;
+    width: 700px;
+    height: 400px;
+}
+
+header h1 {
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: rgb(4, 78, 88);
+    text-align: center;
+    margin-top: 20px;
+}
+header p {
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    color: rgb(4, 78, 88);
+    text-align: center;
+    margin-top: 20px;
+}
+
+header a {
+    background-color: rgb(4, 78, 88);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 70px auto;
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+}
+
+header a:hover {
+    background-color: rgb(14, 132, 132);
+    transition: 0.7s ease;
+}
+
+@media (max-width: 1125px){
+    header {
+        width: 90%;
+        left: 5%;
+        border-radius: 50px;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    header p {
+        font-size: 23px;
+    }
+    header a {
+        font-size: 18px;
+    }
+}
+

@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Funnel Display', sans-serif;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    padding: 0 60px;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 80px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(4, 78, 88);
+    
+}
+
+nav a:hover {
+    color: rgb(14, 132, 132);
+    transition: 0.3s ease;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+nav li {
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.sidebar a:hover {
+    color: rgb(14, 132, 132);
+    transition: 0.6s ease;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 1125px){
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+
+@media (max-width: 400px){
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/*Vamos fazer o Ecommerce?*/
+                            /*header*/
+
+header {
+    background-image: radial-gradient(circle, rgba(47, 102, 109, 0.5), rgba(4, 78, 88, 0.5));
+}
+
+.header-bottom-side {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.header-bottom-side-left {
+    height: 100%;
+    flex-basis: 50%;
+
+}
+
+.header-bottom-side-left h1 {
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: rgb(4, 78, 88);
+    margin-bottom: 1.5rem;
+}
+.header-bottom-side-left h2  {
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(4, 78, 88);
+    margin-bottom: 1.5rem;
+}
+
+.header-bottom-side-left p {
+    line-height: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.header-bottom-side-left button {
+    background-color: rgb(4, 78, 88);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+}
+.header-bottom-side-left button:hover {
+    background-color: rgb(14, 132, 132);
+    transition: 0.3s ease;
+}
+
+.header-bottom-side-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-side-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-left: 0.7rem
+}
+
+/* Media Queries */
+
+@media (max-width: 1125px) {
+    .header-bottom-side {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-bottom-side-left {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .header-bottom-side-right {
+        flex-basis: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-bottom-side-left h1 {
+        font-size: 30px;
+    }
+    .header-bottom-side-left h2 {
+        font-size: 15px;
+    }
+    .header-bottom-side-left button {
+        font-size: 15px;
+    }
+}
+
+
+                            /*header*/
+
+                        /*Main Content*/
+
+.white-background {
+    background-image: radial-gradient(circle, rgba(47, 102, 109, 0.5), rgba(4, 78, 88, 0.5));
+    height: 450px;
+    margin-bottom: 1rem;
+}
+
+.page-inner-content {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cols {
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+
+.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.cols-3 img {
+    max-width: 100%;
+}
+
+.cols img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.cols img {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cols img:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    border-radius: 50px;
+    height: 70%;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(4, 78, 88);
+    margin-bottom: 2rem;
+}
+
+.subtitle-underline {
+    width: 100px;
+    height: 5px;
+    background-color: rgb(4, 78, 88);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.background {
+    background-color: rgb(255, 255, 255);     
+}
+
+.product {
+    color: rgb(4, 78, 88);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 0.5rem;
+}
+
+.contato {
+    margin-top: -9rem;
+    background-image: radial-gradient(circle, rgba(47, 102, 109, 0.5), rgba(4, 78, 88, 0.5));
+    padding: 2rem 2rem;
+    color: white;
+    width: fit-content;
+    border-radius: 45px;
+}
+
+.contato h1 {
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+
+.contato button {
+    background-color: rgb(4, 78, 88);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.contato button:hover {
+    background-color: rgb(14, 132, 132);
+    transition: 0.3s ease;
+}
+
+
+
+
+
+/*media screen*/
+
+@media (max-width: 1025px) {
+    .white-background {
+        display: none;
+    }
+    .cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contato {
+        margin-top: -9rem;
+       
+    }
+    .contato h1 {
+        font-size: 25px;
+    }
+    .contato button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .contato {
+        margin-top: -5rem;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .contato h1 {
+        font-size: 20px;
+    }
+    .contato button {
+        font-size: 15px;
+    }
+}
+
+
+    
