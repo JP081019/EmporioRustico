@@ -8,6 +8,22 @@
     font-family: 'Funnel Display', sans-serif;
 }
 
+body {
+    overflow: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(4, 78, 88);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+}
+
 nav {
     background-color: rgb(255, 255, 255);
     padding: 0 60px;
@@ -53,6 +69,16 @@ nav li {
     font-size: 15px;
 }
 
+nav li svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+}
+
+nav li svg path {
+    fill: rgb(0, 0, 0);
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -92,7 +118,25 @@ nav li {
     }
     .menu-button {
         display: block;
+        position: absolute;
+        right: 0;    
     }
+
+    nav li:first-child {
+        margin-right: auto;
+        font-family: 'Funnel Display', sans-serif;
+        font-weight: 900;
+        font-size: 26px;
+    }
+
+    body {
+        overflow: auto;
+    }
+    
+    body::-webkit-scrollbar {
+        width: 0px;
+    }
+
 }
 
 
